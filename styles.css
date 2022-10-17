@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 80px;
+    background: rgb(124, 124, 124);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 3%;
+    top: 0;
+    left: 0;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li
+{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a
+{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active
+{
+    color: #fff;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile
+{
+    display: none;
+    align-items: center;
+}
+
+#close
+{
+    display: none;
+}
+
+.active-link a 
+{
+  color: white;
+}
+.body-section
+{
+  min-height: 200px;
+  margin-top: 2%;
+  background-color: #efefef;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-body
+{
+  display: flex;
+  flex: 1;
+  min-height: 200px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bottom-body
+{
+  display: flex;
+  flex: 1;
+  min-height: 200px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.profile-pic
+{
+  height: 200px;
+  border-radius: 100px;
+  object-fit: scale-down;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p
+{
+  color: black;
+  font-family: Arial;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.paragraph-section
+{
+  margin-top: 0px;
+}
+
+a
+{
+  text-decoration: none;
+  color: blue;
+}
+a:hover
+{
+  transition: 0.8s;
+  color: red;
+}
+
+.footer-section
+{
+  min-height: 50px;
+  background-color: rgb(124, 124, 124);
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-footer
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.Top-footer
+{
+  display: flex;
+  margin: auto;
+}
+
+.bottom-footer-paragraphs-1
+{
+  color: white;
+  font-family: Arial;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: auto;
+}
+
+.bottom-footer-paragraphs-2
+{
+  color: white;
+  font-family: Arial;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: auto;
+}
+
+.bottom-footer-paragraphs-3
+{
+  color: white;
+  font-family: Arial;
+  font-style: italic;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: auto;
+}
+
+.about-body-section
+{
+  min-height: 400px;
+  background-color: #efefef;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1
+{
+  padding-left: 10px;
+  font-family: Arial;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.profile-paragraph1, .awards-paragraph1, .reference-paragraph1
+{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.profile-paragraph2, .awards-paragraph2
+{
+  font-family: Arial;
+  margin-top: 5px;
+}
+
+.key-skills, .projects
+{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+h2
+{
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Education-paragraph1
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.Education-paragraph2
+{
+  margin-top: 5px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.Education-paragraph3
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.reference-paragraph1
+{
+  margin-bottom: 5px;
+}
+
+.work-body-section, .contact-body-section
+{
+  height: 400px;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  background-color: #efefef;
+}
+
+.contact-body-section
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-paragraph1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+h4 
+{
+    padding-left: 10px;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 0px;
+    color: #fff;
+}
+
+@media (max-width: 799px)
+{
+    #navbar
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active
+    {
+        right: 0px;
+    }
+
+    #navbar li
+    {
+        margin-bottom: 25px;
+    }
+
+    #mobile
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i
+    {
+        color: #fff;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close
+    {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 477px)
+{
+    #header
+    {
+        padding: 10px 30px;
+    }
+}
