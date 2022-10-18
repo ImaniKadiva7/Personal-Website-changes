@@ -297,20 +297,74 @@ h4
     color: #fff;
 }
 
-@media (max-width: 799px)
+.container
 {
-    #navbar
-    {
+    width: 1600px;
+    margin: auto;
+}
+
+.subcontainer
+{
+    width: 85%;
+    margin: auto;
+}
+
+.cookies-paragraph
+{
+    color: white;
+}
+
+#cookies {
+    bottom: 0;
+    background-color: rgb(124, 124, 124);
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+    z-index: 1;
+}
+
+.container
+{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#cookies-btn
+{
+    border-radius: 5px;
+    padding: 8px 12px 8px 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: 3px solid #fff;
+    background-color: black;
+    color: white;
+}
+
+.subcontainer a
+{
+    color: yellow;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media (max-width: 799px) {
+    #navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: flex-start;
         position: fixed;
         top: 0;
         right: -300px;
-        height: 100vh;
-        width: 300px;
+        height: 30vh;
+        width: 200px;
         background-color: #E3E6F3;
-        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 40px 60px rgb(0, 0, 0, 0.1);
         padding: 80px 0 0 10px;
         transition: 0.3s;
     }
@@ -354,5 +408,21 @@ h4
     #header
     {
         padding: 10px 30px;
+    }
+}
+
+@media(max-width:1600px)
+{
+    .container
+    {
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px)
+{
+    .cookies
+    {
+        padding: 10px 0;
     }
 }
